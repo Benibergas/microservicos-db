@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         SERVICE = 'db'
-        NAME = "guikaidei/${env.SERVICE}"
+        NAME = "benisli/${env.SERVICE}"
     }
     stages {
         stage('Deploy to Kubernetes') {
