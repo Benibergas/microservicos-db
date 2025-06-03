@@ -4,9 +4,9 @@ metadata:
   name: postgres-secret
 type: Opaque
 stringData:
-  POSTGRES_DB: store
-  POSTGRES_USER: store
-  POSTGRES_PASSWORD: 5eCr3t
+  postgres-db: c3RvcmU=
+  postgres-user: c3RvcmU=
+  postgres-password: NWVDcjN0
 
 ---
 
