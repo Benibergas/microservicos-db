@@ -1,4 +1,4 @@
-apiVersion: v1More actions
+apiVersion: v1
 kind: Secret
 metadata:
   name: postgres-secret
@@ -28,7 +28,7 @@ spec:
         - name: postgres
           image: postgres:latest
           ports:
-            - containerPort: 5432
+            - containerPort: 8080
           envFrom:
             - secretRef:
                 name: postgres-secret
@@ -49,5 +49,5 @@ spec:
   selector:
     app: postgres
   ports:
-    - port: 5432
-      targetPort: 5432
+    - port: 8080
+      targetPort: 8080
